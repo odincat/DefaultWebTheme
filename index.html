@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=".\css/style.css">
+    <link rel="stylesheet" href=".\css/nav.css">
+    <link rel="stylesheet" href=".\css/locations.css">
+    <script src="https://kit.fontawesome.com/9c4a1f0a43.js" crossorigin="anonymous"></script>
+    <link rel="icon" href=".\img/favicon.ico" type="image/x-icon">
+<!-- 
+    Edit Title
+-->
+    <title>Home</title>
+<!-- 
+    Edit Title
+-->
+    <script>
+        (function () {
+
+/*
+    Hide iframe flickering, full credit goes to https://css-tricks.com/prevent-white-flash-iframe/!
+    Huge thanks <3!
+*/
+
+var div = document.createElement('div'),
+  ref = document.getElementsByTagName('base')[0] || 
+        document.getElementsByTagName('script')[0];
+
+div.innerHTML = '&shy;<style> iframe { visibility: hidden; } </style>';
+
+ref.parentNode.insertBefore(div, ref);
+
+window.onload = function() {
+  div.parentNode.removeChild(div);
+}
+
+})();
+    </script>
+</head>
+<body>
+    <header>
+ <iframe src=".\nav.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+    </header>
+
+<!-- 
+    Edit Section
+-->
+
+    <div class="content">
+    
+    <h1>Hello there!</h1>
+    <div class="article">
+      Bla blah <br>
+      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+    </div>
+    </div>
+
+<!-- 
+    Edit Section
+-->
+
+    <footer class="footer">
+        <iframe src=".\footer.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+    </footer>
+
+    <script>
+function viewNavContent() {
+        var nav = document.getElementById("navbarid");
+        if(nav.className == "navbarclass") {
+            nav.className += " responsive";
+        } else {
+            nav.className = "navbarclass"
+        }
+    }
+    </script>
+  </body>
+</body>
+</html>
