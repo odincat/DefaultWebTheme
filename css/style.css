@@ -11,8 +11,24 @@ body {
     font-family: Segoe UI, Arial;
   }
 
+.navbarclass {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0; /* required */
+
+}
+
+header {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0; /* required */
+  background-color: rgba(255, 255, 255, .15);  
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
 .content {
-    width: 70%;
+    width: 85%;
     margin: 0 auto;
     flex: 1 0 auto;
 }
@@ -37,6 +53,15 @@ a:hover {
 
 @media (prefers-color-scheme: dark) {
 
+  header {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0; /* required */
+    background-color: rgba(65, 65, 65, 0.15);  
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+  }
+  
   body {
     color: white;
     background-color: #333;
