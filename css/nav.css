@@ -34,19 +34,15 @@ body {
     background-color: var(--nav-background);
 }
 
-.navbarclass img {
+.navbarclass img{
     float: left;
-    
-    padding-right: 10px;
-    padding-bottom: 10px;
-    padding-top: 7px;
-    padding-left: 10px;
+    padding: 10px 16px;
 }
 
 .navbarclass a {
     font-size: 17px;
     text-decoration: none;
-    padding: 10px 16px;
+    padding: 12px 10px;
     color: var(--black);
     float: left;
     display: block;

@@ -38,7 +38,28 @@ window.onload = function() {
 
 })();
     </script>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
 </head>
+<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+<script>
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#237afc"
+    },
+    "button": {
+      "background": "#fff",
+      "text": "#237afc"
+    }
+  },
+  "theme": "classic",
+  "content": {
+    "dismiss": "OK, give me yummy cookie",
+    "link": "What are cookies?"
+  }
+});
+</script>
 <body>
     <header>
  <iframe src=".\nav.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
@@ -117,6 +138,27 @@ function viewNavContent() {
         }
     }
     </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+<script>
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#237afc"
+    },
+    "button": {
+      "background": "#fff",
+      "text": "#237afc"
+    }
+  },
+  "theme": "classic",
+  "content": {
+    "dismiss": "OK, give me yummy cookie",
+    "link": "What are cookies?"
+  }
+});
+</script>
+
   </body>
 </body>
 </html>
