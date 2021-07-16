@@ -1,0 +1,38 @@
+.debug {
+  height: 20vh;
+  width: 20vh;
+}
+
+/* Use this to place elements right or left */
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}
+
+/* Positioning */
+.fixed {
+  position: fixed;
+}
+
+.static {
+  position: static;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.inherit {
+  position: inherit;
+}
+
+.sticky {
+  position: sticky;
+}
