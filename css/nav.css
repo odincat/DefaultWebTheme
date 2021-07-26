@@ -34,9 +34,13 @@ body {
     background-color: var(--nav-background);
 }
 
-.navbarclass img{
-    float: left;
-    padding: 10px 16px;
+.brand {
+    text-decoration: none;
+}
+
+.brand:hover {
+    text-decoration: none !important;
+    color: black !important;
 }
 
 .navbarclass a {
@@ -134,6 +138,11 @@ body {
         transition: 0.2s ease-in;
     }
   
+    .brand:hover {
+        text-decoration: none !important;
+        color: white !important;
+    }
+
     }
 
       

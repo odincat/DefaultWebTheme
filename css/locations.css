@@ -1,38 +1,31 @@
 .debug {
-  height: 20vh;
-  width: 20vh;
+  border-style: solid;
+  border-color: #03f8fc;
 }
 
 /* Use this to place elements right or left */
 .right {
   float: right;
+  overflow: hidden;
 }
 
 .left {
   float: left;
+  overflow: hidden;
 }
 
-/* Positioning */
-.fixed {
-  position: fixed;
+.container{
+ padding: 50px;
+ display: block;
 }
 
-.static {
-  position: static;
+@media screen and (max-width: 750px) {
+  .container{
+    padding: 50px;
+    display: grid;
+   }
 }
 
-.absolute {
-  position: absolute;
-}
+span.clear-right { clear: right; display: block; }
 
-.relative {
-  position: relative;
-}
-
-.inherit {
-  position: inherit;
-}
-
-.sticky {
-  position: sticky;
-}
+span.clear-left { clear: left; display: block; }

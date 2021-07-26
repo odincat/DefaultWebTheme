@@ -1,40 +1,35 @@
-# Default Web Theme
+# DefaultWebTheme
 
 ## The project
-This project was made to provide a simple, nice looking theme for people who are not that experienced and want a website to create content on.
-
-## Warning
-This isn't quite finished, DON'T **git clone** this yet. I want this to be updateable with ease, so that you dont have to change multiple things in a file to be compatible with the newest version. 
-If you see something under the releases, then that version should be fine.
-
-When the V1 releases I will also enable the **Template repository** option for the maximum amount of convenience
+This project was made to provide a simple, nice looking theme for people who are not that experienced with html/css and want a website to create content on.
+Check out the [demo](https://default-web-theme.vercel.app/). (I'm too lazy to add images).
 
 ## Features
-* Mobile responsive 
+* Mobile Responsive
+Enjoy an kind of good looking experience on mobile!
+* Dark mode
+If your device is in darkmode the site will automatically apply a dark color theme.
+* Containers
+I originally wanted to have a system were you can easily place text, images etc. where you want, but that turned out to be a little more complex than I thought so I made a container system where you can place 2 items left and right. I will try to make a better system in the future. If you want to know how it works, you can read the documentation (Coming soon).
+* Synced navbar and footer
+Pure convenience!
 
-This feature is finished, but the logo in the navbar will be hidden when opening the menu on a phone.
+## What you need to know
+The lines I wrote / the solutions I found aren't the best, but they work for me. Feel free to contribute!
 
-* "smart" dark mode
+If you open the file locally it may glitch out because of the IFrames. You should use the VS Code extension [LiveServer](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer).
 
-The site checks the setting of the device and determine whether it should use dark mode or not.
-You can edit colors in the **style.css** or **nav.css** file.
+Also i suggest you use [Vercel](https://vercel.com/) or [Netlify](https://www.netlify.com/) to deploy it :) 
 
-* COMING Soon: Align items using an id/class
+## Documentation
+The docs **will** avaible under [here](docs.dwt.tech-cat.de).
 
-Title says it.
-
-## Disadvantages
-* Ugly code
-
-Srs i didn't spend much time on making the code beautiful, maybe i will do that in the future.
-
-* Learning
-
-This can help or cannot. But you would probably learn more if you created a website by yourself ;)
-
-## IMPORTANT
-You need at least a bit of HTML/CSS knowledge in order to use this. If you dont know how to add images or links then this is useless.
-If you try to open the file locally it will probably look scuffed because of the iframes. If you want to display properly, use the vs code extension [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.Timeserver).
+## Lighthouse score on local machine
+![Lighthouse Score (95, 70, 100, 100)](https://i.imgur.com/gX0qCHp.png)
+Accessiblity is only 70 because:
+* The Navbarbar button on mobile is only a FontAwesome icon (not a "discernible" name)
+* I have disabled zoom on mobile, feel free to enable that again (simply replace this part ```<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">``` in the head tag with ```<meta name="viewport" content="width=device-width, initial-scale=1.0">```)
+* Not a high enough background-foreground contrast, not sure why tho.
 
 ## Credits
 [css-tricks](https://css-tricks.com/) for fixing the iframe flickering issue

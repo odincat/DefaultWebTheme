@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 :root {
   --link: #236FFA;
   --link-hover: #23b6fa;
@@ -8,9 +9,11 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    font-family: Segoe UI, Arial;
+    font-family: Segoe UI, 'Roboto';
     background-color: white;
     color: black;
+    font-size: 19px;
+    text-align: center;
   }
 
 .navbarclass {
@@ -38,6 +41,7 @@ header {
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
+    
   }
 
 a {
@@ -50,7 +54,6 @@ a:hover {
   text-decoration: underline;
   transition: 0.2s;
 }
-
 
 @media (prefers-color-scheme: dark) {
 
