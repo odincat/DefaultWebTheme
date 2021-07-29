@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,43 +9,43 @@
     <title>why are u here?</title>
     <script src="https://kit.fontawesome.com/9c4a1f0a43.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
 
-<!-- 
+    <!-- 
     Edit Section
 -->
 
-<div class="navbarclass" id="navbarid">
-    <!-- Logo, may be bugged! -->
-    <!-- <img id="logo" src=".\img/logo.png" width="80px" height="30px"> -->
-    <a class="brand" href=".\index.html"> DefaultWebTheme <i class="fas fa-globe"></i> </a>
+    <div class="navbarclass" id="navbarid">
+        <!-- Logo, may be bugged! -->
+        <!-- <img id="logo" src=".\img/logo.png" width="80px" height="30px"> -->
+        <a class="brand" href=".\index.html"> DefaultWebTheme <i class="fas fa-globe"></i> </a>
 
-<a href=".\index.html" class="active">Home</a>
-<a href="#test">Link1</a>
-<a href="#test">Link2</a>
-<a href="#test">Link3</a>
-<!-- 
+        <a href=".\index.html" class="active">Home</a>
+        <a href="#test">Link1</a>
+        <a href="#test">Link2</a>
+        <a href="#test">Link3</a>
+        <!-- 
     Edit Section
 -->
 
-<a href="javascript:void(0);" onclick="viewNavContent()" class="icon" >
-    <i class="fa fa-bars"></i>
-  </a>
+        <a href="javascript:void(0);" onclick="viewNavContent()" class="icon">
+            <i class="fa fa-bars"></i>
+        </a>
 
-</div>
+    </div>
 
-<script>
-
-    function viewNavContent() {
-        var nav = document.getElementById("navbarid");
-        if(nav.className == "navbarclass") {
-            nav.className += " responsive";
-        } else {
-            nav.className = "navbarclass"
+    <script>
+        function viewNavContent() {
+            var nav = document.getElementById("navbarid");
+            if (nav.className == "navbarclass") {
+                nav.className += " responsive";
+            } else {
+                nav.className = "navbarclass"
+            }
         }
-    }
-
-</script>
+    </script>
 
 </body>
+
 </html>

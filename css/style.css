@@ -4,17 +4,18 @@
   --link-hover: #23b6fa;
   --gray: rgb(75, 75, 75);
 }
+
 body {
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    font-family: Segoe UI, 'Roboto';
-    background-color: white;
-    color: black;
-    font-size: 19px;
-    text-align: center;
-  }
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: Segoe UI, 'Roboto';
+  background-color: white;
+  color: black;
+  font-size: 19px;
+  text-align: center;
+}
 
 .navbarclass {
   position: sticky;
@@ -26,23 +27,23 @@ header {
   position: sticky;
   position: -webkit-sticky;
   top: 0;
-  background-color: rgba(255, 255, 255, .15);  
+  background-color: rgba(255, 255, 255, .15);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
 }
 
 .content {
-    width: 85%;
-    margin: 0 auto;
-    flex: 1 0 auto;
+  width: 85%;
+  margin: 0 auto;
+  flex: 1 0 auto;
 }
 
 .footer {
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    
-  }
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 5px;
+
+}
 
 a {
   color: var(--link);
@@ -50,7 +51,7 @@ a {
 }
 
 a:hover {
-  color: var(--link-hover); 
+  color: var(--link-hover);
   text-decoration: underline;
   transition: 0.2s;
 }
@@ -60,17 +61,16 @@ a:hover {
   header {
     position: sticky;
     position: -webkit-sticky;
-    top: 0; /* required */
-    background-color: rgba(65, 65, 65, 0.15);  
+    top: 0;
+    /* required */
+    background-color: rgba(65, 65, 65, 0.15);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
   }
-  
+
   body {
     color: white;
     background-color: #333;
   }
 
-  }
-
-  
+}

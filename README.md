@@ -10,7 +10,11 @@ Enjoy an kind of good looking experience on mobile!
 * Dark mode
 If your device is in darkmode the site will automatically apply a dark color theme.
 * Containers
+<<<<<<< HEAD
+Basically a column system with a fancy name. Supports up to 4 "containers". If you want to know how it works, you can read the documentation (Coming soon).
+=======
 I originally wanted to have a system were you can easily place text, images etc. where you want, but that turned out to be a little more complex than I thought so I made a container system where you can place 2 items left and right. I will try to make a better system in the future. If you want to know how it works, you can read the documentation (Coming soon).
+>>>>>>> 85f86f9feae332f4f4a3cee439f3315dca089297
 * Synced navbar and footer
 Pure convenience!
 

@@ -1,0 +1,49 @@
+.debug {
+    border-style: solid;
+    border-color: #03f8fc;
+}
+
+/* Grid with vertically centered content */
+.c-grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 17px;
+    align-items: center;
+}
+
+.c-grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 17px;
+    align-items: center;
+}
+
+.c-grid-4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 17px;
+    align-items: center;
+}
+
+/* Grid without vertically centered content */
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 17px;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 17px;
+}
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 17px;
+}
+
+.space {
+    margin: 17px;
+}

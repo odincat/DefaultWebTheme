@@ -6,7 +6,7 @@
 
     --color-link-hover: #236FFA;
     --back-link-hover: ;
-    
+
     --color-active: ;
     --backcolor-active: ;
 
@@ -18,7 +18,7 @@
 
     --color-link-hover-dark: #236FFA;
     --back-link-hover-dark: ;
-    
+
     --color-active-dark: ;
     --backcolor-active-dark: ;
 
@@ -74,35 +74,43 @@ body {
 
 .navbarclass .icon {
     display: none;
-  }
+}
 
 
-  @media screen and (max-width: 600px) {
-    .navbarclass a:not(:first-child) {display: none;}
+@media screen and (max-width: 600px) {
+    .navbarclass a:not(:first-child) {
+        display: none;
+    }
+
     .navbarclass a.icon {
-      float: right;
-      display: block;
+        float: right;
+        display: block;
     }
-  }
-  
-  @media screen and (max-width: 600px) {
-    .navbarclass.responsive {position: relative;}
+}
+
+@media screen and (max-width: 600px) {
+    .navbarclass.responsive {
+        position: relative;
+    }
+
     .navbarclass.responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
     }
+
     .navbarclass.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
+        float: none;
+        display: block;
+        text-align: left;
     }
+
     .navbarclass.responsive img {
         display: none;
     }
-  }
+}
 
-  @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
 
     .navbarclass {
         overflow: hidden;
@@ -117,32 +125,30 @@ body {
         float: left;
         display: block;
     }
-    
+
     .navbarclass a:hover {
         text-decoration: underline;
         color: var(--color-link-hover);
         background-color: var(--back-link-hover-dark);
         transition: 0.2s ease-in;
     }
-    
+
     .navbarclass a.active {
         font-weight: bold;
         color: var(--color-active-dark);
         background-color: var(--backcolor-active-dark);
     }
-    
+
     .navbarclass a.active:hover {
         text-decoration: underline;
         color: var(--color-link-hover-dark);
         background-color: var(--back-link-hover-dark);
         transition: 0.2s ease-in;
     }
-  
+
     .brand:hover {
         text-decoration: none !important;
         color: white !important;
     }
 
-    }
-
-      
+}
